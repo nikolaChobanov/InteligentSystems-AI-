@@ -50,9 +50,7 @@ public class NBC {
                             } else if (ch.contains("n")) {
                                 republicanVotes[counter][1] += 1;
                                 republicanCount[counter] += 1;
-                            } else {
-                                //  republicanCount[counter]+=1;
-                            }
+                            } 
                             counter++;
                         }
 
@@ -71,9 +69,7 @@ public class NBC {
                             } else if (ch.contains("n")) {
                                 democratVotes[counter][1] += 1;
                                 democratCount[counter] += 1;
-                            } else {
-                                // democratCount[counter]+=1;
-                            }
+                            } 
                             counter++;
                         }
                     }
