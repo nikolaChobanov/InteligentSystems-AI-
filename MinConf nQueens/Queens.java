@@ -115,25 +115,6 @@ public class Queens {
 
                 if (conflicts == maxConflicts) {
                     switchEl.add(c);
-
-
-                 /*  I tried with more random options but this was the best i could think of
-
-                  boolean isHeads = Math.random() < 0.5;
-                    if(isHeads==false) {
-                        int value1 = random.nextInt(10);
-                        int value2 = random.nextInt(10);
-                        if (value1 > value2) {
-                            switchElRand = c;
-                        }
-                    }else{
-                        int value1 = random.nextInt(10);
-                        int value2 = random.nextInt(10);
-                        if (value1 < value2) {
-                            switchElRand = c;
-                        }
-                    }*/
-
                 }
                 if (conflicts > maxConflicts) {
                     maxConflicts = conflicts;
@@ -161,27 +142,6 @@ public class Queens {
 
                 if (conflicts == minConflicts) {
                     switchEl.add(r);
-
-
-                     /*
-                      boolean isHeads = Math.random() < 0.5;
-                        if(isHeads==false) {
-
-
-                            int value1 = random.nextInt(10);
-                            int value2 = random.nextInt(10);
-                            if (value1 > value2) {
-                                switchElRand = r;
-                            }
-                        }else{
-                            int value1 = random.nextInt(10);
-                            int value2 = random.nextInt(10);
-                            if (value1 < value2) {
-                                switchElRand = r;
-                            }
-                        }
-*/
-
                 }
                 if (conflicts < minConflicts) {
                     minConflicts = conflicts;
@@ -225,7 +185,6 @@ public class Queens {
         int num = in.nextInt();
         in.close();
         long startTime = System.nanoTime();
-        Queens board = new Queens(num);
         long endTime   = System.nanoTime();
         long totalTime = (endTime - startTime) ;
         System.out.println(totalTime);
